@@ -8,12 +8,11 @@
 <title>Yahoo from JSP</title>
 </head>
 <body>
-	<form action="/login.do" method="post">
+	<form action="/spring-mvc/login.do" method="post">
 	Name :<input type="text" name="kname"/>
 	Password: <input type="password" name="pwd" />
 	<input type="submit" value="Submit Query" />
 		<p><font color="red">${errorMessage}</font></p>
-	
 	</form>
 </body>
 </html>
