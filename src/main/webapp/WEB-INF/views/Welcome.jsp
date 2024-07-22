@@ -7,6 +7,6 @@
 <title>Welcome</title>
 </head>
 <body>
-	Welcome ${name}
+	Welcome ${kname} and Password is ${pwd}
 </body>
 </html>
