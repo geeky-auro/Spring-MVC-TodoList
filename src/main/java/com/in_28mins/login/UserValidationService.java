@@ -1,4 +1,4 @@
-package com.in_28mins;
+package com.in_28mins.login;
 
 public class UserValidationService {
 	public static boolean checkCredentials(String uname, String pwd) {
