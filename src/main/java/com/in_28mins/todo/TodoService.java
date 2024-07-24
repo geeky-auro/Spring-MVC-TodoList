@@ -21,6 +21,7 @@ public class TodoService {
 	}
 	
 	public void addTodo(String name,String desc,Date date,boolean isDone) {
+		todoCount++;
 		todos.add(new Todo(todoCount, name, desc, date, isDone));
 	}
 	

@@ -9,6 +9,9 @@
 	<context:component-scan
 		base-package="com.in_28mins" />
 
+	<mvc:resources mapping="/webjars/**" location="/webjars/" />
+
+
 
 
 	<bean
