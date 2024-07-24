@@ -7,13 +7,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Todos</title>
-<style>
-.heading {
-	background-color: #04AA6D;
-	color: white;
-}
-</style>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+
+<link href="webjars/bootstrap/5.3.3/css/bootstrap.min.css"
 	rel="stylesheet">
 
 
@@ -22,7 +17,8 @@
 	Hi ${kname},
 	<br> Your TodoList
 	<br>
-	<table border="1">
+	<div class="container">
+	<table border="1" class="table table-stripped">
 		<caption>Your Todos are</caption>
 		<thead class="heading">
 			<tr>
@@ -38,14 +34,19 @@
 					<td>${todo.desc}</td>
 					<td>${todo.date}</td>
 					<td>${todo.done}</td>
+					<td><a class="btn btn-danger" href="/delete-todo?id=${todo.id}">Delete</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
 
 	</table>
+		<a class="btn btn-success" href="/add-todo">Add</a>
+	</div>
 
-	<a class="button" href="/add-todo">Add</a>
+	<div>
 
+	
+	</div>
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 	<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>

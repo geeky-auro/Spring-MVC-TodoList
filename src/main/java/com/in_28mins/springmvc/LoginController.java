@@ -50,6 +50,13 @@ public class LoginController {
 		return "login";
 	}
 	
+	@RequestMapping(value="/delete-todo", method = RequestMethod.GET)
+	public String deleteTodo(ModelMap model, @RequestParam int id) {
+		todoService.deleteTodo(id);
+		model.clear();
+		return "redirect:list-todos";
+	}
+	
 	@RequestMapping(value = "/login",method = RequestMethod.POST)
 	public String showLoginPage(@RequestParam String kname,
 			@RequestParam String pwd,
