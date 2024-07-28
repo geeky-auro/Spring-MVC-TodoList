@@ -19,7 +19,6 @@
 	<br>
 	<div class="container">
 	<table border="1" class="table table-stripped">
-		<caption>Your Todos are</caption>
 		<thead class="heading">
 			<tr>
 				<td>Description</td>
@@ -35,6 +34,7 @@
 					<td>${todo.date}</td>
 					<td>${todo.done}</td>
 					<td><a class="btn btn-danger" href="/delete-todo?id=${todo.id}">Delete</a></td>
+					<td><a class="btn btn-info" href="/update-todo?id=${todo.id}">Update</a></td>
 				</tr>
 			</c:forEach>
 		</tbody>

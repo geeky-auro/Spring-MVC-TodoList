@@ -3,15 +3,23 @@ package com.in_28mins.todo;
 import java.util.Date;
 import java.util.Objects;
 
+import javax.validation.constraints.Size;
+
 //import javax.xml.crypto.Data;
 
 
 public class Todo {
 	private int id;
 	private String user;
+	@Size(min = 6, message = "Enter a Minimum of 6 Characters")
 	private String desc;
 	private Date date;
 	private boolean isDone;
+	
+	
+	public Todo() {
+		
+	}
 	
 	
 	
